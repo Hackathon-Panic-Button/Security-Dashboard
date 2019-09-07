@@ -1,0 +1,39 @@
+.card-body ul { 
+	list-style-type: none; 
+	font-size: 20px;
+}
+
+ul li a {
+	color: #6c757d!important;
+	cursor: pointer;
+}
+
+.title {
+	color: white;
+}
+
+.sideMenu {
+	padding: 0;
+}
+
+#menuN {
+	font-weight: bold;
+}
+
+#panelHistory {
+	display: none;
+}
+
+.title {
+	margin: auto;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.container-fluid {
+	/*padding: 0;*/
+}
+
+.historyItem {
+	display: none;
+}

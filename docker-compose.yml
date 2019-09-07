@@ -1,0 +1,22 @@
+version: '2'
+services:
+    panic:
+        restart: "no"
+        image: skiychan/nginx-php7
+        volumes:
+            - "./:/data/www"
+            - "./nginx.conf:/usr/local/nginx/conf/nginx.conf"
+        networks:
+            - local
+        environment:
+            - VIRTUAL_HOST=panic.localhost.com
+            - APP_ENV=local
+            - MYSQL_HOST=mysql
+            - MYSQL_DATABASE=panic
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=root
+
+networks:
+    local:
+        external:
+            name: local
